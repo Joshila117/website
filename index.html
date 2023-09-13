@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="img/styles.css">
+  <style>
+    /* Initially, set the options to be hidden */
+    .options {
+        display: none;
+    }
+  </style>
+  <script>
+      function toggleOptions() {
+          var optionsElement = document.getElementById("options");
+          if (optionsElement.style.display === "none" || optionsElement.style.display === "") {
+              optionsElement.style.display = "block"; // Display the options
+          } else {
+              optionsElement.style.display = "none";  // Hide the options
+          }
+      }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -20,7 +36,7 @@
       </div>
       <div class="box">
           <div class="outer button">
-            <button onclick="navigateToContact()">Contact Me</button>
+            <button onclick="toggleOptions()">Contact Me</button>
             <div class="options" id="options">
               <a href="https://www.instagram.com/_joshila/">
                 <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/>
