@@ -93,12 +93,12 @@
 .button span{
   border-radius: 50px;
 }
-.outer:hover span:nth-child(1){
+/* .outer:hover span:nth-child(1){
   filter: blur(7px);
 }
 .outer:hover span:nth-child(2){
   filter: blur(14px);
-}
+} */
 .outer:hover{
   background: #ff00e0;
   animation: rotate 1.5s linear infinite;
